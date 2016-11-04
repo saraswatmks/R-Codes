@@ -1,0 +1,14 @@
+unique_vart <- function(l){
+        #empty vector
+        x <- c()
+        #check value in l and x
+        for(a in l){
+                if(!(a %in% x))
+                    x <- append(x,a)
+                
+        }
+        return (x)
+}
+
+d <- c(2,3,3,4,5,5,6,7,7,8)
+unique_vart(d)
